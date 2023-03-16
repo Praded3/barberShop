@@ -1,11 +1,114 @@
-.hero__section {
-}
-
 .hero__container {
-}
-
-.hero__left-side {
+  display: flex;
+  position: relative;
 }
 .hero__right-side {
-  background-image: url(./img/a@2x.jpg);
+  display: flex;
+  flex-direction: column;
+}
+
+.link-hero__list {
+  display: flex;
+  gap: 40px;
+  transform: rotate(-90deg) translateX(50%);
+  position: relative;
+  margin-top: auto;
+  bottom: -540px;
+}
+.link-hero__item {
+}
+
+.link-hero__link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15/11 * 100%;
+  letter-spacing: 0.2em;
+  color: $header-text-color;
+  transition: color $transition__stock;
+  &:hover,
+  &:focus {
+    color: $color_accent;
+  }
+}
+
+.hero__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56/48 * 100%;
+  letter-spacing: 0.05em;
+  color: $color_white;
+}
+.hero__descripttion {
+}
+._descripttion {
+}
+@media screen and (max-width: 767px) {
+  .hero__left-side {
+    display: none;
+  }
+  .hero__right-side {
+    padding-bottom: 208px;
+    padding-top: 208px;
+    // padding-left: 31px;
+  }
+  .hero__section {
+    background-color: rgba(25, 28, 38, 0.2);
+    background-image: url(./img/hero/tel/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+      screen and (min-resolution: 192dpi) and (max-width: 767px),
+      screen and (min-resolution: 2dppx) and (max-width: 767px) {
+      background-image: url(./img/hero/tel/2.jpg);
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__left-side {
+    width: 87px;
+  }
+  .hero__right-side {
+    padding-bottom: 237px;
+    padding-top: 272px;
+    padding-left: 98px;
+    flex-grow: 1;
+    background-color: rgba(25, 28, 38, 0.2);
+    background-image: url(./img/hero/tab/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 767px),
+      screen and (min-resolution: 192dpi) and (min-width: 767px),
+      screen and (min-resolution: 2dppx) and (min-width: 767px) {
+      background-image: url(./img/hero/tab/2.jpg);
+    }
+  }
+  .hero__container {
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__left-side {
+    width: 69px;
+  }
+  .hero__right-side {
+    padding-bottom: 208px;
+    padding-top: 237px;
+    padding-left: 100px;
+    flex-grow: 1;
+    // padding-right: 540px;
+    background-image: url(./img/hero/laptop/1.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+      screen and (min-resolution: 192dpi) and (min-width: 1200px),
+      screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+      background-image: url(./img/hero/laptop/2.jpg);
+    }
+  }
+  .hero__title {
+    font-size: 72px;
+    line-height: 85/72 * 100%;
+  }
 }
