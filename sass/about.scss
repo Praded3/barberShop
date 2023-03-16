@@ -1,0 +1,41 @@
+.about__section {
+}
+.about__container {
+  display: flex;
+  gap: 30px;
+}
+.about__list {
+  display: flex;
+  gap: 30px;
+}
+
+.about__right-container {
+  display: flex;
+  flex-direction: column;
+}
+.hero__secondury-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 186%;
+  letter-spacing: 0.02em;
+  color: $primery-text-color;
+  margin-top: 20px;
+}
+@media screen and (max-width: 767px) {
+  .about__left-container {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__list {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__list {
+    flex-direction: row;
+  }
+  .about__right-container {
+    max-width: 470px;
+  }
+}

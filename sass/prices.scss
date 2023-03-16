@@ -1,0 +1,89 @@
+._section {
+}
+.prices__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.prices__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &:first-child {
+    margin-bottom: 20px;
+  }
+}
+.prices__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.prices__value {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.02em;
+  color: $component-text-color;
+}
+.prices__decorative-container {
+  margin-top: 44px;
+  margin-bottom: 44px;
+  padding: 30px 20px 30px 40px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.prices__section {
+  background-color: #111319;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./img/prices/tel/1-1.jpg);
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url(./img/prices/tel/1-2.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .prices__section {
+    background-image: url(./img/prices/tab/1-1.jpg);
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+      screen and (min-resolution: 192dpi) and (min-width: 768px),
+      screen and (min-resolution: 2dppx) and (min-width: 768px) {
+      background-image: url(./img/prices/tab/1-2.jpg);
+    }
+  }
+  .prices__decorative-container {
+    padding: 32px 40px;
+  }
+  .prices__value {
+    font-size: 18px;
+    line-height: 167%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .prices__section {
+    background-image: url(./img/prices/lap/1-1.jpg);
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+      screen and (min-resolution: 192dpi) and (min-width: 1200px),
+      screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+      background-image: url(./img/prices/lap/1-2.jpg);
+    }
+  }
+  .prices__decorative-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    background: none;
+    padding: 32px 0;
+  }
+  .prices__list {
+    flex-basis: calc((100% - 30px) / 2);
+    flex-grow: 1;
+    &:first-child {
+      margin-bottom: 0px;
+    }
+    padding: 30px 22px;
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+}
