@@ -3,11 +3,12 @@
 @import "component.scss";
 @import "mobile-menu.scss";
 @import "header.scss";
+@import "hero.scss";
 body {
   background-color: aqua;
 }
 //
 // variables
-// * {
-//   outline: 1px solid black;
-// }
+* {
+  outline: 1px solid black;
+}

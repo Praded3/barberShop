@@ -13,8 +13,7 @@ header {
   position: absolute;
   width: 100%; }
 
-.page-header {
-  padding-right: 31px;
+.header__page {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,12 +71,9 @@ header {
     .mobile-phone:focus {
       color: #ff6c00; }
 
-  .page-header {
+  .header__page {
     justify-content: flex-start;
-    align-items: center;
-    width: 768px;
-    padding-right: 39px;
-    padding-left: 39px; }
+    align-items: center; }
 
   header {
     padding-top: 32px;
@@ -92,12 +88,12 @@ header {
     position: absolute;
     bottom: -32px;
     left: 20px; } }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
   header {
     padding-top: 32px;
     padding-bottom: 32px; }
 
-  .page-header {
+  .header__page {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px; }

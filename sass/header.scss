@@ -18,8 +18,8 @@ header {
   position: absolute;
   width: 100%;
 }
-.page-header {
-  padding-right: 31px;
+.header__page {
+  // padding-right: 31px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -81,12 +81,12 @@ header {
       color: $color_accent;
     }
   }
-  .page-header {
+  .header__page {
     justify-content: flex-start;
     align-items: center;
-    width: 768px;
-    padding-right: 39px;
-    padding-left: 39px;
+    // width: 768px;
+    // padding-right: 39px;
+    // padding-left: 39px;
   }
   header {
     padding-top: 32px;
@@ -103,12 +103,15 @@ header {
     left: 20px;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
   header {
     padding-top: 32px;
     padding-bottom: 32px;
+    // width: 1170px;
+    // margin-left: auto;
+    // margin-right: auto;
   }
-  .page-header {
+  .header__page {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;

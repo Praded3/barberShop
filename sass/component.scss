@@ -1,5 +1,5 @@
 ._container {
-  max-width: 767px;
+  // max-width: 767px;
   padding: 0 23px;
   margin-left: auto;
   margin-right: auto;
@@ -10,10 +10,10 @@
     padding: 0 39px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   ._container {
-    width: 1170px;
-    padding: 0 215px;
+    width: 1200px;
+    padding: 0 15px;
   }
 }
 ._section {
@@ -26,7 +26,7 @@
     padding-bottom: 88px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   ._section {
     padding-top: 222px;
     padding-bottom: 222px;

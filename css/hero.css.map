@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAQA,iBAAkB;EAChB,gBAAgB,EAAE,mBAAmB",
+"sources": ["../sass/hero.scss"],
 "names": [],
 "file": "hero.css"
 }
