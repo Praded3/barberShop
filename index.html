@@ -431,12 +431,78 @@
                 </ul>
             </div>
         </section>
+        <div class="decorative-section _container">
+            <!-- booking -->
+
+            <section class="booking__section _section">
+                <div class="booking__container _container">
+                    <h2 class="section-title _section-title-dark">Online-booking</h2>
+                    <form class="booking-form">
+                        <span class="input-name-phone">
+                            <label><input type="text" name="name" required class="input-area"
+                                    placeholder="name*"></label>
+                            <label><input type="tel" name="phone" required class="input-area" placeholder="phone*"
+                                    pattern="\+?[0-9\s\-\(\)]+" minlength="10"></label>
+                        </span>
+                        <textarea class="massage" name="massage" placeholder="massage"></textarea>
+                        <button class="submit-btn" type="submit">Send</button>
+                    </form>
+            </section>
+            <!-- contacts -->
+            <section class="photos__section _section">
+                <div class="photos__container _container">
+                    <h2 class="section-title _section-title-dark">Contacts</h2>
+                    <address>
+                        <ul class="contacts__list list">
+                            <li class="contacts___item list"><a class="contacts__map"
+                                    href="https://goo.gl/maps/ZLKBhgC65MUaGSks7">st. Vasilkivska, 7A<br />
+                                    Kyiv, 08132</a>
+                            </li>
+                            <li class="contacts__item list"><a class="contacts__phone" href="tel:+380441111111">+38
+                                    044
+                                    111 11 11</a></li>
+                            <li class="contacts__item list"><a class="contacts__mail"
+                                    href="mailto:barbershop@email.com">barbershop@email.com</a></li>
+                        </ul>
+                    </address>
+                    <div class="photos__decorative-container">
+                        <p class="_suptitle _suptitle-dark">Working hours</p>
+                        <p>Every day from 9:00 to 22:00 </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
 
     </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__copyright">&copy;Copyright 2020</p>
+            <ul class="link-hero__list">
+                <li class="link-footer list"> <a rel="noopener no-referrel nofollow" href=""
+                        class="link-hero__link link">Instagram</a> </li>
+                <li class="link-footer3 list"> <a rel="noopener no-referrel nofollow" href=""
+                        class="link-hero__link link">Youtube</a> </li>
+        </div>
+    </footer>
+    <div class="modal">
+        <button type="button" class="button close-button" data-modal-close><svg class="close" viewBox="0 0 8 8">
+                <path
+                    d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z" />
+            </svg></button>
+        <form class="booking-form">
+            <span class="input-name-phone">
+                <label><input type="text" name="name" required class="input-area" placeholder="name*"></label>
+                <label><input type="tel" name="phone" required class="input-area" placeholder="phone*"
+                        pattern="\+?[0-9\s\-\(\)]+" minlength="10"></label>
+            </span>
+            <textarea class="massage" name="massage" placeholder="massage"></textarea>
+            <button class="submit-btn" type="submit">Send</button>
+        </form>
+    </div>
 
 
-
-
+    <script src="./js/modal.js"></script>
     <script src="./mobile-menu.js"></script>
 </body>
 <!-- <picture>

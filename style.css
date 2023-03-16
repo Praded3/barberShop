@@ -1025,3 +1025,193 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.decorative-section {
+  background-color: #191c26;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .decorative-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.booking__container {
+  width: 570px;
+}
+
+.input-name-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .input-name-phone {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  label {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+.booking-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 44px;
+  width: 100%;
+}
+
+.input-area,
+.massage {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.677;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  width: 100%;
+  display: block;
+}
+
+.massage:focus,
+.input-area:focus {
+  border-color: var(--secondary-text-color-dark-theme);
+  outline: none;
+}
+
+.input-area:focus.input-area::-webkit-input-placeholder,
+.massage:focus.massage::-webkit-input-placeholder {
+  border-color: #ffffff;
+  outline: none;
+  color: #ffffff;
+}
+
+.input-area:focus.input-area:-ms-input-placeholder,
+.massage:focus.massage:-ms-input-placeholder {
+  border-color: #ffffff;
+  outline: none;
+  color: #ffffff;
+}
+
+.input-area:focus.input-area::-ms-input-placeholder,
+.massage:focus.massage::-ms-input-placeholder {
+  border-color: #ffffff;
+  outline: none;
+  color: #ffffff;
+}
+
+.input-area:focus.input-area::placeholder,
+.massage:focus.massage::placeholder {
+  border-color: #ffffff;
+  outline: none;
+  color: #ffffff;
+}
+
+.massage {
+  resize: none;
+  height: 76px;
+  color: #ffffff;
+  margin-top: 44px;
+}
+
+.input-area::-webkit-input-placeholder,
+.massage::-webkit-input-placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+  -webkit-transition: color 300ms linear;
+  transition: color 300ms linear;
+}
+
+.input-area:-ms-input-placeholder,
+.massage:-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+  -webkit-transition: color 300ms linear;
+  transition: color 300ms linear;
+}
+
+.input-area::-ms-input-placeholder,
+.massage::-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+  -webkit-transition: color 300ms linear;
+  transition: color 300ms linear;
+}
+
+.input-area::placeholder,
+.massage::placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+  -webkit-transition: color 300ms linear;
+  transition: color 300ms linear;
+}
+
+.submit-btn {
+  display: block;
+  margin-top: 44px;
+  max-width: 160px;
+  font-family: var(--primery-font-family);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  padding: 12px 20px;
+  -webkit-transition: background-color 300ms linear, color 300ms linear;
+  transition: background-color 300ms linear, color 300ms linear;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #ff6c00;
+}
