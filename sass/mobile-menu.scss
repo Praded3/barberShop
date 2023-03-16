@@ -1,0 +1,125 @@
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: $color_white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1111;
+    height: 100%;
+    min-width: 70%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity $transition__stock, visibility $transition__stock;
+  }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .mobile-menu-container {
+    position: relative;
+    padding-top: 118px;
+    padding-left: 40px;
+    padding-right: 10px;
+  }
+  .mobile-menu-btn-close {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    padding: 0px;
+    line-height: 0px;
+    // width: 40px;
+    // height: 40px;
+    position: absolute;
+    top: 48px;
+    right: 31px;
+    transition: background-color $transition__stock, fill $transition__stock;
+    &:focus,
+    &:hover {
+      background-color: $color_accent;
+    }
+
+    &:focus .mobile-menu-icon-close,
+    &:hover .mobile-menu-icon-close {
+      fill: $color_white;
+    }
+  }
+
+  .mobile-menu-list-item-link,
+  .phone-in-mobile-menu {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.38;
+    letter-spacing: 0.1em;
+    color: $header-text-color;
+    transition: color $transition__stock;
+    &:hover,
+    &:focus {
+      color: $color_accent;
+    }
+  }
+  .mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .mobile-menu-icon-close {
+    border-radius: 50%;
+  }
+  .mobile-nav-menu {
+    margin-bottom: 64px;
+  }
+  .phone-in-mobile-menu {
+    display: block;
+    margin-bottom: 24px;
+  }
+  .mobile-menu-btn {
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: $header-text-color;
+    padding: 12px 37px;
+    border: 1px solid $color_accent;
+    border-radius: 25px;
+    margin-bottom: 64px;
+    background-color: transparent;
+    transition: color $transition__stock, background-color $transition__stock;
+    &:focus,
+    &:hover {
+      background-color: $color_accent;
+      color: $color_white;
+    }
+  }
+  .mobile-menu-list-link {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.35;
+    letter-spacing: 0.2em;
+    margin-left: 100px;
+    margin-bottom: 24px;
+
+    color: $header-text-color;
+    &:focus,
+    &:hover {
+      color: $color_accent;
+    }
+    transition: color $transition__stock;
+    &:hover,
+    &:focus {
+      color: $color_accent;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}

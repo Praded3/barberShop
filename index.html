@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="page-header">
+            <a href="./index.html"><svg class="logo">
+                    <use href="./svg/sprite.svg#logo"></use>
+                </svg></a>
+            <button type="button" class="menu-btn" data-modal-open><svg class="menu-btn-icon">
+                    <use href="./svg/sprite.svg#icon-menu"></use>
+                </svg></button>
+            <nav class="nav-menu">
+                <ul class="menu-list">
+                    <li class="menu-list-item list"><a class="menu-list-item-link link" href="">About</a></li>
+                    <li class="menu-list-item list"><a class="menu-list-item-link link" href="">Services and prices</a>
+                    </li>
+                    <li class="menu-list-item list"><a class="menu-list-item-link link" href="">Barbers</a></li>
+                    <li class="menu-list-item list"><a class="menu-list-item-link link" href="">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="decorative-phone-container">
+                <a class="link mobile-phone" href="tel:+380441111111">+38 044 111 11 11</a>
+                <button type="button" class="modal-btn modal-btn-black-theme modal-btn-header">Online-booking</button>
+            </div>
+        </div>
+        <!-- mobile-menu -->
+        <div class="mobile-menu" data-modal>
+            <div class="mobile-menu-container">
+                <button type="submit" class="mobile-menu-btn-close" data-modal-close>
+                    <svg class="mobile-menu-icon-close" width="40" height="40">
+                        <use href="./svg/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-nav-menu">
+                    <ul class="mobile-menu-list">
+                        <li class="list mobile-menu-list-item"><a class="link mobile-menu-list-item-link"
+                                href="">About</a></li>
+                        <li class="list mobile-menu-list-item"><a class="link mobile-menu-list-item-link"
+                                href="">Services and prices</a></li>
+                        <li class="list mobile-menu-list-item"><a class="link mobile-menu-list-item-link"
+                                href="">Barbers</a></li>
+                        <li class="list mobile-menu-list-item"><a class="link mobile-menu-list-item-link"
+                                href="">Contacts</a></li>
+                    </ul>
+                </nav>
+                <a class="link phone-in-mobile-menu" href="tel:+380441111111">+38 044 111 11 11</a>
+                <button type="button" class="mobile-menu-btn">online-booking</button>
+                <ul class="">
+                    <li class="mobile-menu-link-item list"><a class="mobile-menu-list-link link" href="">Instagram</a>
+                    </li>
+                    <li class="mobile-menu-link-item list"><a class="mobile-menu-list-link link" href="">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- <picture>
+        <source srcset="./img/.webp 1x, ./img/@2x.webp 2x"
+            media="(min-width: 1400px)" type="image/webp" width="270">
+        <source
+            srcset="./img/.jpg 1x, ./img/@2x-min.jpg 2x"
+            media="(min-width: 1400px)" width="270">
+        <source srcset="./img/.webp 1x, ./img/@2x.webp 2x"
+            media="(min-width: 768px)" type="image/webp" width="330">
+        <source srcset="./img.jpg 1x, ./img/.jpg 2x"
+            media="(min-width: 768px)" width="330">
+        <img class="abut-us-img" src="" alt="working process image">
+    </picture> -->
+    <!-- hero -->
+
+
+
+    <script src="./mobile-menu.js"></script>
+</body>
+
+</html>

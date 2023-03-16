@@ -1,0 +1,33 @@
+$primery-text-color: #555555;
+$header-text-color: #303030;
+$component-text-color: #9da4bd;
+$color_white: #ffffff;
+$color_accent: #ff6c00;
+$transition__stock: 300ms linear;
+$primery_font: "Open Sans", sans-serif;
+$secondury_font: "Raleway", sans-serif;
+
+body {
+  font-family: $primery_font;
+}
+// __hero-right-side {
+//   padding-top: 272px;
+//   padding-bottom: 237px;
+//   padding-left: 100px;
+//   background-image: url(./img/hero/slider-desctop-min.jpg);
+// }
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+//   screen and (min-resolution: 192dpi) and (min-width: 768px),
+//   screen and (min-resolution: 2dppx) and (min-width: 768px) {
+//   __hero-right-side {
+//     background-image: url(./img/hero/slider-tablet@2x-min.jpg);
+//   }
+// }
+
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 1400px),
+//   screen and (min-resolution: 192dpi) and (min-width: 1400px),
+//   screen and (min-resolution: 2dppx) and (min-width: 1400px) {
+//   __hero-right-side {
+//     background-image: url(./img/hero/slider-desctop@2x-min.jpg);
+//   }
+// }
