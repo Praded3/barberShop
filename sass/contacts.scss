@@ -1,1 +1,97 @@
+._section {
+}
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+}
+._container {
+}
+.section-title {
+}
+._section-title-dark {
+}
+.contacts__decorative-container {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.contacts__address {
+}
+.contacts__address-list {
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+}
+.contacts__address-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  //   align-items: center;
+}
 
+.contacts__address-mail {
+  text-decoration-line: underline;
+}
+
+.contacts__address-map,
+.contacts__address-phone,
+.contacts__address-mail,
+.contacts__address-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  letter-spacing: 0.02em;
+  color: $component-text-color;
+}
+.contacts__address-map {
+  font-weight: 700;
+}
+._contacts-suptitle {
+  color: $color_white;
+}
+.contacts__icon {
+  fill: transparent;
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+.contacts__section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__section {
+    background-image: url(./img/contacts/tel/1-1.jpg);
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+      screen and (min-resolution: 192dpi) and (max-width: 767px),
+      screen and (min-resolution: 2dppx) and (max-width: 767px) {
+      background-image: url(./img/contacts/tel/1-2.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__section {
+    background-image: url(./img/contacts/tab/1-1.jpg);
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+      screen and (min-resolution: 192dpi) and (min-width: 768px),
+      screen and (min-resolution: 2dppx) and (min-width: 768px) {
+      background-image: url(./img/contacts/tab/1-2.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__section {
+    background-image: url(./img/contacts/lap/1-1.jpg);
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+      screen and (min-resolution: 192dpi) and (min-width: 1200px),
+      screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+      background-image: url(./img/contacts/lap/1-2.jpg);
+    }
+  }
+}

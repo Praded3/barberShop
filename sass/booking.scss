@@ -1,80 +1,88 @@
-.decorative-section {
-  background-color: #191c26;
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 30px;
-  @media screen and (min-width: 1200px) {
-    flex-direction: row;
-  }
+.booking__section {
 }
-
+._section {
+}
 .booking__container {
-  width: 570px;
-}
-.input-name-phone {
   display: flex;
-  /* justify-content: space-between; */
-  gap: 30px;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) {
-  .input-name-phone {
-    flex-direction: row;
-  }
-  label {
-    flex-basis: calc((100% - 30px) / 2);
-  }
-}
+._centre-title {
+  align-self: center;
+  margin-bottom: 40px;
+  display: flex;
 
-.booking-form {
+  font-size: 42px;
+  line-height: 49/42 * 100%;
+}
+.booling__form {
   display: flex;
   flex-direction: column;
-  margin-top: 44px;
   width: 100%;
 }
-
-.input-area,
+.booking__decorative-container {
+  display: flex;
+  flex-direction: column;
+}
 .massage {
-  background: none;
+  resize: none;
+  height: 76px;
+  color: $color_white;
+}
+.booking__btn {
+  margin-top: 44px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16/12 * 100%;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $color_white;
+  background-color: transparent;
+  padding: 12px 62px;
+  border: 1px solid $color_accent;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   max-width: 160px;
+  align-self: center;
+  transition: background-color $transition__stock, color $transition__stock;
+  &:hover,
+  &:focus {
+    background-color: $color_accent;
+  }
+}
+label {
+  flex-wrap: 1;
+}
+input,
+textarea {
+  width: 100%;
+  background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.677;
-  letter-spacing: 0.01em;
+  margin-top: 44px;
+}
+
+.booking__main-decorative-container {
+  background-color: #191c26;
+}
+.booking__input-area,
+.massage {
   color: $color_white;
-  width: 100%;
-  display: block;
+  &:focus {
+    border-color: $color_white;
+    outline: none;
+  }
 }
-
-// .input-area {
-//   width: 200px;
-// }
-
-.massage:focus,
-.input-area:focus {
-  border-color: var(--secondary-text-color-dark-theme);
-  outline: none;
-}
-
-.input-area:focus.input-area::placeholder,
+.booking__input-area:focus.booking__input-area::placeholder,
 .massage:focus.massage::placeholder {
   border-color: $color_white;
   outline: none;
   color: $color_white;
 }
-
-.massage {
-  resize: none;
-  height: 76px;
-  color: $color_white;
-  margin-top: 44px;
-}
-
-.input-area::placeholder,
+.booking__input-area::placeholder,
 .massage::placeholder {
+  font-family: var(--primery-font-family);
   font-weight: 600;
   font-size: 11px;
   line-height: 1.2;
@@ -83,27 +91,4 @@
   color: rgba(157, 164, 189, 0.4);
 
   transition: color $transition__stock;
-}
-
-.submit-btn {
-  display: block;
-  margin-top: 44px;
-  max-width: 160px;
-  font-family: var(--primery-font-family);
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: $color_white;
-  background-color: transparent;
-  border: 1px solid $color_accent;
-  border-radius: 25px;
-  padding: 12px 20px;
-  transition: background-color $transition__stock, color $transition__stock;
-}
-
-.submit-btn:hover,
-.submit-btn:focus {
-  background-color: $color_accent;
 }
