@@ -34,6 +34,23 @@
 .contacts__address-mail {
   text-decoration-line: underline;
 }
+.contacts__address-map,
+.contacts__address-phone,
+.contacts__address-mail {
+  &:hover,
+  &:focus {
+    color: $color_white;
+  }
+}
+
+.contacts__address-map,
+.contacts__address-phone,
+.contacts__address-mail {
+  &:hover .contacts__icon,
+  &:focus .contacts__icon {
+    fill: $color_white;
+  }
+}
 
 .contacts__address-map,
 .contacts__address-phone,

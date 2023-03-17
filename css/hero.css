@@ -1,24 +1,35 @@
 /*
 Error: Undefined variable: "$header-text-color".
-        on line 26 of D:\prog\barberShop\sass\hero.scss
+        on line 21 of D:\prog\barberShop\sass\hero.scss
 
-21: .link-hero__link {
-22:   font-weight: 600;
-23:   font-size: 11px;
-24:   line-height: 15/11 * 100%;
-25:   letter-spacing: 0.2em;
-26:   color: $header-text-color;
-27:   transition: color $transition__stock;
-28:   &:hover,
-29:   &:focus {
-30:     color: $color_accent;
-31:   }
+16:   bottom: -540px;
+17:   &::before {
+18:     content: "";
+19:     width: 60px;
+20:     height: 1px;
+21:     background-color: $header-text-color;
+22:     margin-right: 20px;
+23:     position: absolute;
+24:     top: 12px;
+25:     left: -80px;
+26:   }
 
 Backtrace:
-D:\prog\barberShop\sass\hero.scss:26
+D:\prog\barberShop\sass\hero.scss:21
 D:/prog/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 D:/prog/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 D:/prog/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+D:/prog/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/prog/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+D:/prog/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+D:/prog/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+D:/prog/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+D:/prog/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+D:/prog/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+D:/prog/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+D:/prog/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+D:/prog/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+D:/prog/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 D:/prog/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 D:/prog/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 D:/prog/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -62,4 +73,4 @@ D:/prog/koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$header-text-color\".\A         on line 26 of D:\prog\barberShop\sass\hero.scss\A \A 21: .link-hero__link {\A 22:   font-weight: 600;\A 23:   font-size: 11px;\A 24:   line-height: 15/11 * 100%;\A 25:   letter-spacing: 0.2em;\A 26:   color: $header-text-color;\A 27:   transition: color $transition__stock;\A 28:   &:hover,\A 29:   &:focus {\A 30:     color: $color_accent;\A 31:   }"; }
+  content: "Error: Undefined variable: \"$header-text-color\".\A         on line 21 of D:\prog\barberShop\sass\hero.scss\A \A 16:   bottom: -540px;\A 17:   &::before {\A 18:     content: \"\";\A 19:     width: 60px;\A 20:     height: 1px;\A 21:     background-color: $header-text-color;\A 22:     margin-right: 20px;\A 23:     position: absolute;\A 24:     top: 12px;\A 25:     left: -80px;\A 26:   }"; }

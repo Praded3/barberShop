@@ -16,14 +16,26 @@
 .prices__item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
+  // align-items: baseline;
+  // &::before {
+  //   content: "";
+  //   order: 2;
+  //   width: 100%;
+  //   height: 1px;
+  //   background-color: aqua;
+  // }
 }
-.prices__value {
+.prices__value,
+.prices__value2 {
+  display: flex;
   font-weight: 400;
   font-size: 14px;
   line-height: 143%;
   letter-spacing: 0.02em;
   color: $component-text-color;
+}
+.prices__value {
 }
 .prices__decorative-container {
   margin-top: 44px;

@@ -9,6 +9,9 @@
   .decorative-phone-container {
     display: none;
   }
+  body.lock {
+    overflow: hidden;
+  }
 }
 
 header {

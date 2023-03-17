@@ -6,7 +6,10 @@ body {
   .mobile-phone,
   .modal-btn-header,
   .decorative-phone-container {
-    display: none; } }
+    display: none; }
+
+  body.lock {
+    overflow: hidden; } }
 header {
   padding-top: 40px;
   padding-bottom: 40px;

@@ -7,8 +7,8 @@ Error: Undefined variable: "$color_white".
 3: }
 4: 
 5: .modal-btn {
-6:   font-weight: 600;
-7:   font-size: 12px;
+6:   display: inline-block;
+7:   margin-bottom: auto;
 
 Backtrace:
 D:\prog\barberShop\sass\component.scss:2
@@ -58,4 +58,4 @@ D:/prog/koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color_white\".\A         on line 2 of D:\prog\barberShop\sass\component.scss\A \A 1: ._section-title-dark {\A 2:   color: $color_white;\A 3: }\A 4: \A 5: .modal-btn {\A 6:   font-weight: 600;\A 7:   font-size: 12px;"; }
+  content: "Error: Undefined variable: \"$color_white\".\A         on line 2 of D:\prog\barberShop\sass\component.scss\A \A 1: ._section-title-dark {\A 2:   color: $color_white;\A 3: }\A 4: \A 5: .modal-btn {\A 6:   display: inline-block;\A 7:   margin-bottom: auto;"; }

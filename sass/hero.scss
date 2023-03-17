@@ -14,11 +14,22 @@
   position: relative;
   margin-top: auto;
   bottom: -540px;
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: $header-text-color;
+    margin-right: 20px;
+    position: absolute;
+    top: 12px;
+    left: -80px;
+  }
 }
 .link-hero__item {
 }
 
 .link-hero__link {
+  display: inline-block;
   font-weight: 600;
   font-size: 11px;
   line-height: 15/11 * 100%;

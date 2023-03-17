@@ -3,6 +3,8 @@
 }
 
 .modal-btn {
+  display: inline-block;
+  margin-bottom: auto;
   font-weight: 600;
   font-size: 12px;
   line-height: 16/12 * 100%;
@@ -25,11 +27,12 @@
 
 .modal-btn-white {
   color: $header-text-color;
+
   &:hover,
   &:focus {
     color: $color_white;
   }
-  margin-top: 40px;
+
   width: 163px;
 }
 .modal-btn-dark {
@@ -42,6 +45,13 @@
 
 ._suptitle-white {
   color: $header-text-color;
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: $header-text-color;
+    margin-right: 20px;
+  }
 }
 .section-title {
   font-family: "Raleway";
@@ -69,6 +79,8 @@
   padding-bottom: 84px;
 }
 ._suptitle {
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 15/11 * 100%;
@@ -78,7 +90,15 @@
 }
 ._suptitle-dark {
   color: rgba(157, 164, 189, 0.6);
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.6);
+    margin-right: 20px;
+  }
 }
+
 ._descripttion {
   font-weight: 400;
   font-size: 16px;
@@ -118,5 +138,8 @@
   .section-title {
     font-size: 42px;
     line-height: 49/42 * 100%;
+  }
+  .modal-btn-white {
+    margin-top: auto;
   }
 }
