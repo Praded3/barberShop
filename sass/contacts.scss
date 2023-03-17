@@ -112,9 +112,11 @@
   }
   .qq {
     display: flex;
-    padding: 0 23px;
+    padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
+    width: 1200px;
+    gap: 30px;
   }
   .booking__container,
   .contacts__container {
