@@ -1212,6 +1212,48 @@ textarea {
   transition: color 300ms linear;
 }
 
+.booking__decorative-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .booking__decorative-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .booking__input-area {
+    width: 330px;
+  }
+}
+@media screen and (min-width: 768px) {
+  ._centre-title {
+    -ms-flex-item-align: self-start;
+        align-self: self-start;
+  }
+
+  .booking__btn {
+    -ms-flex-item-align: self-start;
+        align-self: self-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .booking__input-area {
+    width: 250px;
+  }
+}
 .contacts__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1319,6 +1361,27 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__decorative-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0px;
+  }
+
+  .contacts__address {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+
+  .contacts__bottom-side {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contacts__section {
     background-image: url(./img/contacts/lap/1-1.jpg);
@@ -1327,5 +1390,33 @@ textarea {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 1200px) {
   .contacts__section {
     background-image: url(./img/contacts/lap/1-2.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__decorative-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 70px;
+  }
+
+  .qq {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 23px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .booking__container,
+  .contacts__container {
+    width: 570px;
+  }
+
+  .contacts__container {
+    padding-left: 100px;
   }
 }

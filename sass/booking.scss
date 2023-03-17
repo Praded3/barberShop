@@ -10,10 +10,10 @@
   align-self: center;
   margin-bottom: 40px;
   display: flex;
-
   font-size: 42px;
   line-height: 49/42 * 100%;
 }
+
 .booling__form {
   display: flex;
   flex-direction: column;
@@ -91,4 +91,33 @@ textarea {
   color: rgba(157, 164, 189, 0.4);
 
   transition: color $transition__stock;
+}
+
+.booking__decorative-container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .booking__decorative-container {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .booking__input-area {
+    width: 330px;
+  }
+}
+@media screen and (min-width: 768px) {
+  ._centre-title {
+    align-self: self-start;
+  }
+  .booking__btn {
+    align-self: self-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .booking__input-area {
+    width: 250px;
+  }
 }
