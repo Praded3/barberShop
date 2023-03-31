@@ -42,7 +42,6 @@
     padding-top: 118px;
     padding-left: 40px;
     padding-right: 10px;
-    overflow: auto;
   }
   .mobile-menu-btn-close {
     background-color: transparent;
@@ -135,7 +134,7 @@
       color: $color_accent;
     }
   }
-  .body.lock {
+  .lock {
     overflow: hidden;
   }
 }
