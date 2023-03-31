@@ -12,4 +12,5 @@ function menu(event) {
     menuBody.classList.remove("is-open");
     qqq.classList.remove("lock");
   }
+  
 }
