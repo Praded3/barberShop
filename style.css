@@ -256,7 +256,8 @@ body {
     min-width: 70%;
     opacity: 0;
     visibility: hidden;
-    pointer-events: none;
+    pointer-events: auto;
+    overflow: auto;
     -webkit-transition: opacity 300ms linear, visibility 300ms linear;
     transition: opacity 300ms linear, visibility 300ms linear;
   }
@@ -272,6 +273,7 @@ body {
     padding-top: 118px;
     padding-left: 40px;
     padding-right: 10px;
+    overflow: auto;
   }
 
   .mobile-menu-btn-close {
@@ -334,7 +336,7 @@ body {
   }
 
   .mobile-menu-btn {
-    display: block;
+    display: inline-block;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;

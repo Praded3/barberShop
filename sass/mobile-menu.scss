@@ -27,7 +27,8 @@
     min-width: 70%;
     opacity: 0;
     visibility: hidden;
-    pointer-events: none;
+    pointer-events: auto;
+    overflow: auto;
     transition: opacity $transition__stock, visibility $transition__stock;
   }
   .mobile-menu.is-open {
@@ -41,6 +42,7 @@
     padding-top: 118px;
     padding-left: 40px;
     padding-right: 10px;
+    overflow: auto;
   }
   .mobile-menu-btn-close {
     background-color: transparent;
@@ -94,7 +96,7 @@
     margin-bottom: 24px;
   }
   .mobile-menu-btn {
-    display: block;
+    display: inline-block;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
@@ -133,6 +135,9 @@
       color: $color_accent;
     }
   }
+  // .body.lock {
+  //   overflow: hidden;
+  // }
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
