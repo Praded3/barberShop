@@ -111,15 +111,16 @@
     flex-grow: 1;
     // padding-right: 540px;
     background-image: url(./img/hero/laptop/1.jpg);
-
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-      screen and (min-resolution: 192dpi) and (min-width: 1200px),
-      screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-      background-image: url(./img/hero/laptop/2.jpg);
-    }
   }
   .hero__title {
     font-size: 72px;
     line-height: 85/72 * 100%;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1157px),
+  screen and (min-resolution: 192dpi) and (max-width: 1157px),
+  screen and (min-resolution: 2dppx) and (max-width: 1157px) {
+  .our-skills {
+    background-image: url(./img/hero/laptop/2.jpg);
   }
 }
